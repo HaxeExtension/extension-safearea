@@ -1,3 +1,5 @@
+package extension.safearea;
+
 #if cpp
 import cpp.Lib;
 #elseif neko
