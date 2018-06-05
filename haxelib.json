@@ -1,12 +1,12 @@
 {
   "name": "extension-safearea",
-  "url": "https://github.com/raggy/extension-safearea",
+  "url": "https://github.com/HaxeExtension/extension-safearea",
   "license": "MIT",
   "tags": [ "extension", "lime", "openfl", "ios" ],
   "description": "Lime/OpenFL extension that adds support for getting safe area on iOS (to help support iPhone X)",
   "version": "1.0.0",
   "releasenote": "Initial release",
-  "contributors": ["Benjamin Davis"],
+  "contributors": ["raggy"],
   "dependencies": {
     "openfl": ""
   }
