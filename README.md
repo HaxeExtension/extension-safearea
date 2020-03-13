@@ -1,6 +1,6 @@
 # extension-safearea
 
-An OpenFL extension that adds support for querying the screen safe area on iOS.
+An OpenFL extension that adds support for querying the screen safe area on iOS and Android.
 
 This allows you to avoid placing important elements behind the notch and rounded corners on the iPhone X, as well as any future devices.
 
