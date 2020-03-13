@@ -3,4 +3,13 @@
 
 	<ndll name="safearea" if="ios" />
 
+	<section if="android">
+		<dependency
+			name="notch"
+			path="dependencies/android"
+			if="android"
+		/>
+		<android extension="org.haxe.extension.NotchAndroid" />
+	</section>
+
 </project>
