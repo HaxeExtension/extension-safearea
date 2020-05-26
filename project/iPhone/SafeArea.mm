@@ -14,14 +14,17 @@ namespace safearea
 	{
 		if (@available(iOS 11, *))
 		{
-			UIWindow *window = [[UIApplication sharedApplication] keyWindow];
-			UIView *view = window.rootViewController.view;
-			UIEdgeInsets safeAreaInsets = view.safeAreaInsets;
 
-			*top = safeAreaInsets.top * view.contentScaleFactor;
-			*bottom = safeAreaInsets.bottom * view.contentScaleFactor;
-			*left = safeAreaInsets.left * view.contentScaleFactor;
-			*right = safeAreaInsets.right * view.contentScaleFactor;
+		
+			UIWindow *window = [UIApplication sharedApplication].windows[0];
+			UIEdgeInsets safeAreaInsets = window.safeAreaInsets;
+
+			float scale = [UIScreen mainScreen].scale;
+			
+			*top = safeAreaInsets.top * scale;
+			*bottom = safeAreaInsets.bottom * scale;
+			*left = safeAreaInsets.left * scale;
+			*right = safeAreaInsets.right * scale;
 
 			return;
 		}
